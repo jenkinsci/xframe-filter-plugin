@@ -25,6 +25,6 @@
 <?jelly escape-by-default='true'?>
 <j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler">
   <j:if test="${it.sendHeader}">
-    <st:header name="X-Frame-Options" value="${it.options}"/>
+    <st:setHeader name="X-Frame-Options" value="${it.options}"/>
   </j:if>
 </j:jelly>
