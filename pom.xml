@@ -35,7 +35,7 @@
   </parent>
 
   <artifactId>xframe-filter-plugin</artifactId>
-  <version>1.1</version>
+  <version>1.2-SNAPSHOT</version>
   <packaging>hpi</packaging>
 
   <name>XFrame Filter Plugin</name>
