@@ -47,9 +47,8 @@
 
   <licenses>
     <license>
-      <name>The MIT license</name>
-      <url>https://github.com/jenkinsci/xframe-filter-plugin/raw/master/LICENSE.txt</url>
-      <distribution>repo</distribution>
+      <name>MIT License</name>
+      <url>http://opensource.org/licenses/MIT</url>
     </license>
   </licenses>
 
