@@ -35,7 +35,7 @@
   </parent>
 
   <artifactId>xframe-filter-plugin</artifactId>
-  <version>1.2-SNAPSHOT</version>
+  <version>1.2</version>
   <packaging>hpi</packaging>
 
   <name>XFrame Filter Plugin</name>
@@ -64,6 +64,7 @@
     <connection>scm:git:git://github.com/jenkinsci/xframe-filter-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/xframe-filter-plugin.git</developerConnection>
     <url>https://github.com/jenkinsci/xframe-filter-plugin</url>
+    <tag>xframe-filter-plugin-1.2</tag>
   </scm>
 
   <!-- get every artifact through maven.glassfish.org, which proxies all the artifacts that we need -->
