@@ -71,13 +71,12 @@ public final class XFrameFilterPageDecorator extends PageDecorator
   /**
    * The default value for {@link #sendHeader}.
    */
-  protected static final boolean DEFAULT_SEND_HEADER = true;
+  private static final boolean DEFAULT_SEND_HEADER = true;
 
   /**
    * The default value for {@link #options}.
    */
-  // protected static final Options DEFAULT_OPTIONS = Options.SAMEORIGIN;
-  protected static final String  DEFAULT_OPTIONS     = "SAMEORIGIN";
+  private static final String  DEFAULT_OPTIONS     = "SAMEORIGIN";
 
   /**
    * Whether or not to send the X-Frame-Options HTTP header.
