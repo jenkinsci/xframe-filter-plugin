@@ -28,7 +28,6 @@ import hudson.Extension;
 import hudson.model.PageDecorator;
 import net.sf.json.JSONObject;
 
-import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.StaplerRequest;
 
 /**
@@ -105,14 +104,13 @@ public final class XFrameFilterPageDecorator extends PageDecorator
    * Create a HSTS Filter {@link PageDecorator} with the specified
    * configuration.
    */
-  @DataBoundConstructor
   public XFrameFilterPageDecorator(final boolean sendHeader,
       final String options)
   {
     super();
-    load();
     this.sendHeader = sendHeader;
     this.options = options;
+    load();
   }
 
   @Override
