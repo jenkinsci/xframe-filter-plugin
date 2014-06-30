@@ -31,5 +31,7 @@
 			HTTP response header</a> can be used to indicate whether or not a browser
 		should be allowed to render a page in a &lt;frame&gt; or
 		&lt;iframe&gt;. Sites can use this to avoid clickjacking attacks, by
-		ensuring that their content is not embedded into other sites.</span>
+		ensuring that their content is not embedded into other sites.
+                Jenkins core by default sets this to <code>SAMEORIGIN</code> but using this plugin you can select other options.
+</span>
 </div>
