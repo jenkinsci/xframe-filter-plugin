@@ -24,7 +24,7 @@
 
 package org.jenkins.ci.plugins.xframe_filter;
 
-import com.gargoylesoftware.htmlunit.html.HtmlForm;
+import org.htmlunit.html.HtmlForm;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Rule;
@@ -42,7 +42,7 @@ public class XFrameFilterPageDecoratorTest {
     @Test public void configuration() throws Exception {
         assertEquals("ALLOW-FROM http://nowhere.net/", r.createWebClient().goTo("").getWebResponse().getResponseHeaderValue("X-Frame-Options"));
         HtmlForm form = r.createWebClient().goTo("configure").getFormByName("config");
-        form.getInputByName("_.options").setValueAttribute("ALLOW-FROM http://my.com/");
+        form.getInputByName("_.options").setValue("ALLOW-FROM http://my.com/");
         r.submit(form);
         assertEquals("ALLOW-FROM http://my.com/", r.createWebClient().goTo("").getWebResponse().getResponseHeaderValue("X-Frame-Options"));
     }
